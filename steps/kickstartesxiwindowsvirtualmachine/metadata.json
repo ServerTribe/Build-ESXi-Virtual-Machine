@@ -1,0 +1,70 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "kickstartesxiwindowsvirtualmachine", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "setoptionsforvirtualmachinekickstartonesxi"
+        }, 
+        {
+            "order": 20, 
+            "stepKey": "deletetheexistingesxivirtualmachinebyfullyqualifiedname"
+        }, 
+        {
+            "order": 40, 
+            "stepKey": "deletetheexistingesxivirtualmachinebyhostname"
+        }, 
+        {
+            "order": 60, 
+            "stepKey": "createandconfiguretheesxivirtualmachine"
+        }, 
+        {
+            "order": 80, 
+            "stepKey": "enable3dforthevirtualmachine"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "setbootorderfortheesxivirtualmachine"
+        }, 
+        {
+            "order": 120, 
+            "stepKey": "setnetworkadaptertovmxnet3fortheesxivirtualmachine"
+        }, 
+        {
+            "order": 140, 
+            "stepKey": "copyisotoesxihost"
+        }, 
+        {
+            "order": 160, 
+            "stepKey": "copydriversisotoesxihost"
+        }, 
+        {
+            "order": 180, 
+            "stepKey": "loadtheisointotheesxivirtualmachine"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "adddriverscdromintotheesxivirtualmachine"
+        }, 
+        {
+            "order": 220, 
+            "stepKey": "starttheesxivirtualmachine"
+        }, 
+        {
+            "order": 240, 
+            "stepKey": "pingforwinrmhttpsandwait120s"
+        }, 
+        {
+            "order": 260, 
+            "stepKey": "cleankickstartbuildfiles"
+        }, 
+        {
+            "order": 280, 
+            "stepKey": "ejectdriverscdromfromtheesxivirtualmachine"
+        }
+    ], 
+    "name": "Kickstart ESXi Windows Virtual Machine", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

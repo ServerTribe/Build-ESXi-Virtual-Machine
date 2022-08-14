@@ -1,0 +1,2 @@
+DIR="{ksVmwareAttuneBaseDir}/*{targetServer.fqn}"
+[ ! ${DIR} ] || sudo rm -rf ${DIR}

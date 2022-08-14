@@ -1,0 +1,6 @@
+{
+    "key": "ksvmwareguesttype", 
+    "name": "KS VMWare: Guest Type", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

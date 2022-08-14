@@ -1,0 +1,6 @@
+{
+    "key": "ksvmwarebootisodir", 
+    "name": "KS VMWare: Boot ISO Dir", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

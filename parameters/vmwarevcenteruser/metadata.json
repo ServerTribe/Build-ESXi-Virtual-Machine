@@ -1,0 +1,6 @@
+{
+    "key": "vmwarevcenteruser", 
+    "name": "VMWare: vCenter User", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.OsCred"
+}

@@ -1,0 +1,13 @@
+pwsh <<'EOF'
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vmwareVcenterServer.ip} `
+    -User {vmwareVcenterUser.user} `
+    -Password {vmwareVcenterUser.password}
+
+Start-VM -VM (Get-VM -Name "{targetServer.fqn}") -RunAsync
+
+EOF
+
+

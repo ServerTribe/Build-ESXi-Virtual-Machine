@@ -1,0 +1,6 @@
+{
+    "key": "ksvmwarevmramsizemb", 
+    "name": "KS VMWare: VM Ram Size MB", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.Text"
+}

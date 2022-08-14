@@ -1,0 +1,1 @@
+Clear directories related to the target server to ensure the process starts from a clean slate.

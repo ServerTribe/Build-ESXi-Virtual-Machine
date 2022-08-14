@@ -1,0 +1,10 @@
+{
+    "enabled": true, 
+    "interpreter": 1, 
+    "key": "loadtheisointotheesxivirtualmachine", 
+    "name": "Load the ISO into the ESXi Virtual Machine", 
+    "osCredKey": "attunenodecredlinux", 
+    "serverKey": "attunenodelinux", 
+    "successExitCode": 0, 
+    "type": "com.servertribe.attune.tuples.StepSshTuple"
+}
