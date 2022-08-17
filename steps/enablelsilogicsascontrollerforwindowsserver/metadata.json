@@ -1,8 +1,8 @@
 {
     "enabled": true, 
     "interpreter": 1, 
-    "key": "cleankickstartbuildfiles", 
-    "name": "Clean Kickstart Build Files", 
+    "key": "enablelsilogicsascontrollerforwindowsserver", 
+    "name": "Enable LSI Logic SAS Controller for Windows Server", 
     "osCredKey": "powerclinodeuser", 
     "serverKey": "powerclinode", 
     "successExitCode": 0, 

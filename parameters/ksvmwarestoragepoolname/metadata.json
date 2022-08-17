@@ -1,6 +1,0 @@
-{
-    "key": "ksvmwarestoragepoolname", 
-    "name": "KS VMWare: Storage Pool Name", 
-    "showInPlan": false, 
-    "type": "c.s.s.b.phv.Text"
-}

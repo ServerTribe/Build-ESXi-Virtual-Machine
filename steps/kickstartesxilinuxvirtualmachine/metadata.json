@@ -5,48 +5,28 @@
     "key": "kickstartesxilinuxvirtualmachine", 
     "links": [
         {
-            "order": 0, 
-            "stepKey": "ksesxisetoptions"
-        }, 
-        {
-            "order": 20, 
-            "stepKey": "ksesxideletevmfqn"
-        }, 
-        {
-            "order": 40, 
-            "stepKey": "ksesxideletevmhostname"
-        }, 
-        {
-            "order": 60, 
-            "stepKey": "ksesxicreatevm"
-        }, 
-        {
-            "order": 80, 
-            "stepKey": "ksesxienablesas"
-        }, 
-        {
             "order": 100, 
-            "stepKey": "ksesxienable3d"
+            "stepKey": "prepareandcreatevirtualmachine"
         }, 
         {
-            "order": 120, 
-            "stepKey": "ksesxicopyisotoesxihost"
+            "order": 150, 
+            "stepKey": "copyandloadthekickstartisointothevirtualmachine"
         }, 
         {
-            "order": 140, 
-            "stepKey": "ksesxiloadisointovm"
+            "order": 650, 
+            "stepKey": "startthevirtualmachine"
         }, 
         {
-            "order": 160, 
-            "stepKey": "ksesxistartvm"
+            "order": 750, 
+            "stepKey": "cleankickstartbuildfiles"
         }, 
         {
-            "order": 180, 
-            "stepKey": "kscleanbuildfilesdelete"
+            "order": 850, 
+            "stepKey": "pingforssh"
         }, 
         {
-            "order": 200, 
-            "stepKey": "kssshwait"
+            "order": 900, 
+            "stepKey": "deployandinstallvmwaretoolsonthelcentos"
         }
     ], 
     "name": "Kickstart ESXi Linux Virtual Machine", 

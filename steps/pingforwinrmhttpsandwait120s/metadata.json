@@ -5,7 +5,7 @@
     "name": "Ping for WinRM HTTPS and wait 120s", 
     "postWait": 120, 
     "preWait": 0, 
-    "serverKey": "kickstartserver", 
+    "serverKey": "virtualmachine", 
     "tcpPort": 5986, 
     "type": "com.servertribe.attune.tuples.StepTcpPingTuple"
 }

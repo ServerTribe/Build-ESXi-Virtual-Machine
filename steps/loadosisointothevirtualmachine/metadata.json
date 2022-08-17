@@ -1,8 +1,8 @@
 {
     "enabled": true, 
     "interpreter": 1, 
-    "key": "cleankickstartbuildfiles", 
-    "name": "Clean Kickstart Build Files", 
+    "key": "loadosisointothevirtualmachine", 
+    "name": "Load OS ISO into the Virtual Machine", 
     "osCredKey": "powerclinodeuser", 
     "serverKey": "powerclinode", 
     "successExitCode": 0, 

@@ -1,0 +1,6 @@
+{
+    "key": "virtualmachine", 
+    "name": "Virtual Machine", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Server"
+}

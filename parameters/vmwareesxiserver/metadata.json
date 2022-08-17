@@ -1,6 +1,0 @@
-{
-    "key": "vmwareesxiserver", 
-    "name": "VMWare: ESXi Server", 
-    "showInPlan": false, 
-    "type": "c.s.s.b.phv.Server"
-}

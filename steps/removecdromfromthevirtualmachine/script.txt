@@ -1,0 +1,14 @@
+pwsh <<'EOF' 
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterHost.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+
+$vm = Get-VM -Name "{virtualMachine.fqn}"
+
+$cd = Get-CDDrive -VM $vm
+Remove-CDDrive -CD $cd[1]
+
+EOF

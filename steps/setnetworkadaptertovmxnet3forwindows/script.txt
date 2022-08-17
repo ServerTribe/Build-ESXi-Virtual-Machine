@@ -1,0 +1,11 @@
+pwsh <<'EOF' 
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterHost.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+
+Get-VM -name {virtualMachine.fqn} | Get-NetworkAdapter | Where { $_.Type -eq "E1000E"} | Set-NetworkAdapter -Type "vmxnet3"
+
+EOF

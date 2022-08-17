@@ -1,0 +1,1 @@
+Node details for the ESXi Host.

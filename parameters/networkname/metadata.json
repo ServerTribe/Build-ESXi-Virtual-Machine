@@ -1,0 +1,6 @@
+{
+    "key": "networkname", 
+    "name": "Network Name", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.Text"
+}

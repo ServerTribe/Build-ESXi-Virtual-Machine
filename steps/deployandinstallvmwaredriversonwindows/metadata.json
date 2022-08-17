@@ -1,0 +1,38 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": true, 
+    "key": "deployandinstallvmwaredriversonwindows", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "shutdownwindowsmachine"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "createandloadvmwaredriversforwindows"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "startthevirtualmachine"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "pingforwinrmhttpsandwait120s"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "removewmwaredriverscdromfromthevirtualmachinetest"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "startthevirtualmachine"
+        }, 
+        {
+            "order": 300, 
+            "stepKey": "pingforwinrmhttpsandwait120s"
+        }
+    ], 
+    "name": "Deploy and Install VMWare Drivers on Windows", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

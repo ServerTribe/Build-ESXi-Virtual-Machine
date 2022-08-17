@@ -1,8 +1,8 @@
 {
     "enabled": true, 
     "interpreter": 1, 
-    "key": "cleankickstartbuildfiles", 
-    "name": "Clean Kickstart Build Files", 
+    "key": "createandconfigurethevirtualmachine", 
+    "name": "Create and Configure the Virtual Machine", 
     "osCredKey": "powerclinodeuser", 
     "serverKey": "powerclinode", 
     "successExitCode": 0, 

@@ -1,0 +1,56 @@
+
+virtualMachine="{virtualMachine.fqn}"
+baseDir="{baseDir}"
+bootIsoDir="{bootIsoDir}"
+storagePool="{storagePool}"
+
+# Copy ISO to ESXi host
+pwsh <<'EOF' | grep -v 'Uploading'
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterHost.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+    
+# Create the TO dir string
+$to = "ds:$bootIsoDir"
+$to = $to -Replace "/","\"
+
+# Get the Datastore
+$datastore = Get-Datastore -Name '$storagePool'
+$datastore
+
+# Create the DS drive
+if (Test-Path "ds:") {
+    Remove-PSDrive ds -Force
+}
+
+if ($datastore -is [System.Array]) {
+    Write-Host "Get-Datastore returned multiple datastores, using first item in array.."
+    $datastore = $datastore[0]
+
+}
+
+New-PSDrive -Location $datastore -Name ds -PSProvider VimDatastore -Root ""
+
+# Ensure the destination dir exists
+Set-Location "ds:"
+
+if (-Not (Test-Path "$to")) {
+    "Creating $to"
+    New-Item  -ItemType Directory -Path "$to"
+}
+
+# Set the local path to the ISO
+Set-Location $baseDir/build-$virtualMachine
+
+# Copy the ISO
+Copy-DatastoreItem $virtualMachine-Drivers.iso $to `
+    -Force:$true -Confirm:$false 
+
+    
+# Remove the DS Drive
+Remove-PSDrive ds -Force
+
+EOF

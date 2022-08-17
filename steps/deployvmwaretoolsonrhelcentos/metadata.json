@@ -1,0 +1,11 @@
+{
+    "archiveKey": "rhelvmwaretools", 
+    "deployPath": "/tmp", 
+    "enabled": true, 
+    "key": "deployvmwaretoolsonrhelcentos", 
+    "name": "Deploy VMWare Tools on RHEL/CentOS", 
+    "osCredKey": "virtualmachineuserlinux", 
+    "serverKey": "virtualmachinelinux", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

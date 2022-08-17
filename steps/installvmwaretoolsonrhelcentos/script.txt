@@ -1,0 +1,2 @@
+cd /tmp/vmware-tools-distrib
+./vmware-install.pl -d -f

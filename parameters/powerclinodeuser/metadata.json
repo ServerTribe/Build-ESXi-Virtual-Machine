@@ -1,0 +1,6 @@
+{
+    "key": "powerclinodeuser", 
+    "name": "PowerCLI Node User", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.LinOsCred"
+}

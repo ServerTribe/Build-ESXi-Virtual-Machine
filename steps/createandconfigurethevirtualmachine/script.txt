@@ -1,0 +1,44 @@
+# Create the new VM
+
+# NOTE: ALL VMs are kickstarted with a default 50g disk. More disks are added
+#       once the operating system is installed, via a subsequen "add disk"
+#       vCenter call
+
+pwsh <<'EOF'
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterHost.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+    
+if ( "{esxiHost.fqn}" -eq "{vcenterHost.fqn}" ) {
+    Write-Host "We're talking to the ESXi host, don't pass the -VMHost arg"
+    $vm = New-VM `
+        -Name "{virtualMachine.fqn}" `
+        -Datastore "{ksVmwareStoragePoolName}"`
+        -NumCpu {ksVmwareCpuCount} `
+        -DiskMB 81920 `
+        -MemoryMB {ksVmwareVmRamSizeMb} `
+        -NetworkName "{ksVmwareNetworkName}" `
+        -GuestId '{ksVmwareGuestType}' `
+        -CD 
+
+} else {
+    Write-Host "We're talking to a vCenter server, pass the -VMHost arg"
+    $storagePool = Get-VMHost -Name '{virtualMachine.fqn}' | Get-Datastore -Name '{ksVmwareStoragePoolName}' 
+    
+    $vm = New-VM `
+        -VMHost "{esxiHost.fqn}" `
+        -Name "{virtualMachine.fqn}" `
+        -Datastore $storagePool `
+        -NumCpu {ksVmwareCpuCount} `
+        -DiskMB 51200 `
+        -MemoryMB {ksVmwareVmRamSizeMb} `
+        -NetworkName "{ksVmwareNetworkName}" `
+        -GuestId '{ksVmwareGuestType}' `
+        -CD 
+
+}
+
+EOF

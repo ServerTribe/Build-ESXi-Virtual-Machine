@@ -1,0 +1,26 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": false, 
+    "key": "createandloadvmwaredriversforwindows", 
+    "links": [
+        {
+            "order": 50, 
+            "stepKey": "deployvmwaredriversforwindows"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "createvmwaredriversisoforwindows"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "copyvmwaredriversisoforwindowstovirtualhost"
+        }, 
+        {
+            "order": 200, 
+            "stepKey": "addwmwaredriversisointothevirtualmachine"
+        }
+    ], 
+    "name": "Create and Load VMWare Drivers for Windows", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

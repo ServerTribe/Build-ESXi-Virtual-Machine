@@ -1,0 +1,11 @@
+{
+    "archiveKey": "winvmwaredrivers", 
+    "deployPath": "{baseDir}/build-{virtualMachine.fqn}", 
+    "enabled": true, 
+    "key": "deployvmwaredriversforwindows", 
+    "name": "Deploy VMWare Drivers for Windows", 
+    "osCredKey": "powerclinodeuser", 
+    "serverKey": "powerclinode", 
+    "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
+    "unpack": true
+}

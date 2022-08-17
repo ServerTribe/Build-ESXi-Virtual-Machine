@@ -1,0 +1,18 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": false, 
+    "key": "copyandloadthekickstartisointothevirtualmachine", 
+    "links": [
+        {
+            "order": 50, 
+            "stepKey": "copykickstartisotovirtualhost"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "loadosisointothevirtualmachine"
+        }
+    ], 
+    "name": "Copy and Load the Kickstart ISO into the Virtual Machine", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

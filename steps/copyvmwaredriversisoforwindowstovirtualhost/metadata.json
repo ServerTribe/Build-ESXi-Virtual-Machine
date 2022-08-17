@@ -1,8 +1,8 @@
 {
     "enabled": true, 
     "interpreter": 1, 
-    "key": "cleankickstartbuildfiles", 
-    "name": "Clean Kickstart Build Files", 
+    "key": "copyvmwaredriversisoforwindowstovirtualhost", 
+    "name": "Copy VMWare Drivers ISO for Windows to Virtual Host", 
     "osCredKey": "powerclinodeuser", 
     "serverKey": "powerclinode", 
     "successExitCode": 0, 

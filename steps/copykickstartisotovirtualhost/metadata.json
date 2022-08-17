@@ -1,8 +1,8 @@
 {
     "enabled": true, 
     "interpreter": 1, 
-    "key": "cleankickstartbuildfiles", 
-    "name": "Clean Kickstart Build Files", 
+    "key": "copykickstartisotovirtualhost", 
+    "name": "Copy Kickstart ISO to Virtual Host", 
     "osCredKey": "powerclinodeuser", 
     "serverKey": "powerclinode", 
     "successExitCode": 0, 

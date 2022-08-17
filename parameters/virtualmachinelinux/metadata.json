@@ -1,0 +1,6 @@
+{
+    "key": "virtualmachinelinux", 
+    "name": "Virtual Machine: Linux", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.LinuxServer"
+}

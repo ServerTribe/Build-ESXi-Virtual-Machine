@@ -1,0 +1,26 @@
+{
+    "concurrency": 1, 
+    "enabled": true, 
+    "isBlueprint": false, 
+    "key": "configurevirtualmachineforwindows", 
+    "links": [
+        {
+            "order": 0, 
+            "stepKey": "enablelsilogicsascontrollerforwindowsserver"
+        }, 
+        {
+            "order": 50, 
+            "stepKey": "enable3dforwindows1011"
+        }, 
+        {
+            "order": 100, 
+            "stepKey": "setbootorderforwindows"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "setnetworkadaptertovmxnet3forwindows"
+        }
+    ], 
+    "name": "Configure Virtual Machine for Windows", 
+    "type": "com.servertribe.attune.tuples.StepGroupTuple"
+}

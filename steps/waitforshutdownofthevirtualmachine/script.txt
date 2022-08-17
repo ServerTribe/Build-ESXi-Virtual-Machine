@@ -1,0 +1,15 @@
+pwsh <<'EOF'
+$ErrorActionPreference = "Stop"
+Import-Module VMware.VimAutomation.Core
+
+Connect-VIServer {vcenterHost.ip} `
+    -User {vcenterUser.user} `
+    -Password {vcenterUser.password}
+
+while ((Get-VM -Name "{virtualMachine.fqn}").PowerState -ne "PoweredOff") {
+    echo "Waiting for shutdown"
+    sleep 2
+}
+echo "VM is powered off."
+
+EOF

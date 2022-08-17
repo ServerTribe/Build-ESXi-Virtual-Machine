@@ -5,64 +5,44 @@
     "key": "kickstartesxiwindowsvirtualmachine", 
     "links": [
         {
-            "order": 0, 
-            "stepKey": "setoptionsforvirtualmachinekickstartonesxi"
-        }, 
-        {
-            "order": 20, 
-            "stepKey": "deletetheexistingesxivirtualmachinebyfullyqualifiedname"
-        }, 
-        {
-            "order": 40, 
-            "stepKey": "deletetheexistingesxivirtualmachinebyhostname"
-        }, 
-        {
-            "order": 60, 
-            "stepKey": "createandconfiguretheesxivirtualmachine"
-        }, 
-        {
-            "order": 80, 
-            "stepKey": "enable3dforthevirtualmachine"
+            "order": 50, 
+            "stepKey": "prepareandcreatevirtualmachine"
         }, 
         {
             "order": 100, 
-            "stepKey": "setbootorderfortheesxivirtualmachine"
+            "stepKey": "configurevirtualmachineforwindows"
         }, 
         {
-            "order": 120, 
-            "stepKey": "setnetworkadaptertovmxnet3fortheesxivirtualmachine"
-        }, 
-        {
-            "order": 140, 
-            "stepKey": "copyisotoesxihost"
-        }, 
-        {
-            "order": 160, 
-            "stepKey": "copydriversisotoesxihost"
-        }, 
-        {
-            "order": 180, 
-            "stepKey": "loadtheisointotheesxivirtualmachine"
+            "order": 150, 
+            "stepKey": "copyandloadthekickstartisointothevirtualmachine"
         }, 
         {
             "order": 200, 
-            "stepKey": "adddriverscdromintotheesxivirtualmachine"
+            "stepKey": "createandloadvmwaredriversforwindows"
         }, 
         {
-            "order": 220, 
-            "stepKey": "starttheesxivirtualmachine"
+            "order": 950, 
+            "stepKey": "startthevirtualmachine"
         }, 
         {
-            "order": 240, 
-            "stepKey": "pingforwinrmhttpsandwait120s"
-        }, 
-        {
-            "order": 260, 
+            "order": 1000, 
             "stepKey": "cleankickstartbuildfiles"
         }, 
         {
-            "order": 280, 
-            "stepKey": "ejectdriverscdromfromtheesxivirtualmachine"
+            "order": 1050, 
+            "stepKey": "pingforwinrmhttpsandwait120s"
+        }, 
+        {
+            "order": 1100, 
+            "stepKey": "removewmwaredriverscdromfromthevirtualmachinetest"
+        }, 
+        {
+            "order": 1200, 
+            "stepKey": "startthevirtualmachine"
+        }, 
+        {
+            "order": 1250, 
+            "stepKey": "pingforwinrmhttpsandwait120s"
         }
     ], 
     "name": "Kickstart ESXi Windows Virtual Machine", 

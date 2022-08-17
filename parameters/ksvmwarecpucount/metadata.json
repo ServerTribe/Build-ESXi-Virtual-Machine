@@ -1,6 +1,0 @@
-{
-    "key": "ksvmwarecpucount", 
-    "name": "KS VMWare: CPU Count", 
-    "showInPlan": false, 
-    "type": "c.s.s.b.phv.Text"
-}
