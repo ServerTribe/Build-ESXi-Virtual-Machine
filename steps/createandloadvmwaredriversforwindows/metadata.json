@@ -5,19 +5,23 @@
     "key": "createandloadvmwaredriversforwindows", 
     "links": [
         {
-            "order": 50, 
-            "stepKey": "deployvmwaredriversforwindows"
-        }, 
-        {
             "order": 100, 
-            "stepKey": "createvmwaredriversisoforwindows"
+            "stepKey": "cleankickstartbuildfiles"
         }, 
         {
             "order": 150, 
-            "stepKey": "copyvmwaredriversisoforwindowstovirtualhost"
+            "stepKey": "deployvmwaredriversforwindows"
         }, 
         {
             "order": 200, 
+            "stepKey": "createvmwaredriversisoforwindows"
+        }, 
+        {
+            "order": 250, 
+            "stepKey": "copyvmwaredriversisoforwindowstovirtualhost"
+        }, 
+        {
+            "order": 300, 
             "stepKey": "addwmwaredriversisointothevirtualmachine"
         }
     ], 

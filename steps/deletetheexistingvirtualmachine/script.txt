@@ -8,7 +8,7 @@ Connect-VIServer {vcenterHost.ip} `
     -User "{vcenterUser.user}" `
     -Password "{vcenterUser.password}"
 
-$fqnName = Get-VM "{virtualMachine.fqn}"
+$fqnName = Get-VM "{virtualMachine.fqn}" -ErrorAction SilentlyContinue
 
 if ( $fqnName.count -eq 1 ) {
     if ( $fqnName.PowerState -eq "PoweredOn" ) {
@@ -21,7 +21,7 @@ if ( $fqnName.count -eq 1 ) {
     Remove-VM -DeleteFromDisk -VM $fqnName -Confirm:$false
 } else {
 
-    $hnName = Get-VM "{virtualMachine.hostname}"
+    $hnName = Get-VM "{virtualMachine.hostname}" -ErrorAction SilentlyContinue
 
     if ( $hnName.count -eq 1 ) {
         if ( $hnName.PowerState -eq "PoweredOn" ) {

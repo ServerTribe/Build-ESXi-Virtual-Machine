@@ -2,21 +2,25 @@
     "concurrency": 1, 
     "enabled": true, 
     "isBlueprint": true, 
-    "key": "deployandinstallvmwaretoolsonthelcentos", 
+    "key": "deployandinstallvmwaretoolsonrhelcentos", 
     "links": [
         {
-            "order": 0, 
-            "stepKey": "deployvmwaretoolsonrhelcentos"
-        }, 
-        {
             "order": 50, 
-            "stepKey": "installvmwaretoolsonrhelcentos"
+            "stepKey": "cleanupvmwaretools"
         }, 
         {
             "order": 100, 
+            "stepKey": "deployvmwaretoolsonrhelcentos"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "installvmwaretoolsonrhelcentos"
+        }, 
+        {
+            "order": 200, 
             "stepKey": "cleanupvmwaretools"
         }
     ], 
-    "name": "Deploy and Install VMWare Tools on THEL/CentOS", 
+    "name": "Deploy and Install VMWare Tools on RHEL/CentOS", 
     "type": "com.servertribe.attune.tuples.StepGroupTuple"
 }

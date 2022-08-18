@@ -5,15 +5,19 @@
     "key": "prepareandcreatevirtualmachine", 
     "links": [
         {
-            "order": 0, 
-            "stepKey": "setoptionsforthevirtualmachinekickstart"
-        }, 
-        {
             "order": 50, 
-            "stepKey": "deletetheexistingvirtualmachine"
+            "stepKey": "cleankickstartbuildfiles"
         }, 
         {
             "order": 100, 
+            "stepKey": "setoptionsforthevirtualmachinekickstart"
+        }, 
+        {
+            "order": 150, 
+            "stepKey": "deletetheexistingvirtualmachine"
+        }, 
+        {
+            "order": 200, 
             "stepKey": "createandconfigurethevirtualmachine"
         }
     ], 

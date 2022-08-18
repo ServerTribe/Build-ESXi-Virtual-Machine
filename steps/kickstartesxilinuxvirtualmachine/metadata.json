@@ -9,7 +9,7 @@
             "stepKey": "prepareandcreatevirtualmachine"
         }, 
         {
-            "order": 150, 
+            "order": 200, 
             "stepKey": "copyandloadthekickstartisointothevirtualmachine"
         }, 
         {
@@ -26,7 +26,7 @@
         }, 
         {
             "order": 900, 
-            "stepKey": "deployandinstallvmwaretoolsonthelcentos"
+            "stepKey": "deployandinstallvmwaretoolsonrhelcentos"
         }
     ], 
     "name": "Kickstart ESXi Linux Virtual Machine", 

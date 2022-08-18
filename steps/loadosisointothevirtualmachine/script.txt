@@ -1,7 +1,4 @@
 
-virtualMachine="{virtualMachine.fqn}"
-storagePool="{storagePool}"
-
 # Create the new VM
 pwsh <<'EOF'
 $ErrorActionPreference = "Stop"
@@ -11,8 +8,8 @@ Connect-VIServer {vcenterHost.ip} `
     -User {vcenterUser.user} `
     -Password {vcenterUser.password}
 
-$cd = Get-VM -Name "$virtualMachine" | Get-CDDrive
-$iso = "[$storagePool] kickstart_isos/kickstart_$virtualMachine.iso"
+$cd = Get-VM -Name "{virtualMachine.fqn}" | Get-CDDrive
+$iso = "[{storagePool}] kickstart_isos/kickstart_{virtualMachine.fqn}.iso"
 
 Set-CDDrive -CD $cd `
     -IsoPath $iso `
