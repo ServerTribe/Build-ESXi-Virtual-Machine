@@ -4,7 +4,7 @@
     "enabled": true, 
     "key": "deployvmwaretoolsonrhelcentos", 
     "name": "Deploy VMWare Tools on RHEL/CentOS", 
-    "osCredKey": "virtualmachineuserlinux", 
+    "osCredKey": "virtualmachinerootuserlinux", 
     "serverKey": "virtualmachinelinux", 
     "type": "com.servertribe.attune.tuples.StepPushDesignFileTuple", 
     "unpack": true

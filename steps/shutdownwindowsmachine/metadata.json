@@ -6,7 +6,7 @@
     "interpreterScriptSyntax": "powershell", 
     "key": "shutdownwindowsmachine", 
     "name": "Shutdown Windows Machine", 
-    "osCredKey": "windowsadministrator", 
+    "osCredKey": "windowsuseradministrator", 
     "serverKey": "virtualmachinewindows", 
     "successExitCode": 0, 
     "timeout": 30, 

@@ -1,6 +1,6 @@
 {
     "archiveKey": "winvmwaredrivers", 
-    "deployPath": "{baseDir}/build-{virtualMachine.fqn}", 
+    "deployPath": "{kickstartBaseDir}/build-{virtualMachine.fqn}", 
     "enabled": true, 
     "key": "deployvmwaredriversforwindows", 
     "name": "Deploy VMWare Drivers for Windows", 

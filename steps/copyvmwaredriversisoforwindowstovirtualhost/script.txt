@@ -1,7 +1,7 @@
 
 virtualMachine="{virtualMachine.fqn}"
-baseDir="{baseDir}"
-bootIsoDir="{bootIsoDir}"
+baseDir="{kickstartBaseDir}"
+bootIsoDir="{kickstartBootIsoDir}"
 storagePool="{storagePool}"
 
 # Copy ISO to ESXi host

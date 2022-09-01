@@ -1,6 +1,6 @@
-DIR="{baseDir}/build-{virtualMachine.fqn}"
+DIR="{kickstartBaseDir}/build-{virtualMachine.fqn}"
 [[ -d ${DIR} ]] && rm -rf ${DIR} && echo "Removed ${DIR}" || \
     echo "No directory to remove."
 
-ISO="{baseDir}/kickstart_{virtualMachine.fqn}.iso"
+ISO="{kickstartBaseDir}/kickstart_{virtualMachine.fqn}.iso"
 [[ -f ${ISO} ]] && rm -fv ${ISO} || echo "No ISO to remove."

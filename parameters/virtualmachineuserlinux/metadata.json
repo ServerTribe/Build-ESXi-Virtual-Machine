@@ -1,6 +1,0 @@
-{
-    "key": "virtualmachineuserlinux", 
-    "name": "Virtual Machine User: Linux", 
-    "showInPlan": true, 
-    "type": "c.s.s.b.phv.LinOsCred"
-}

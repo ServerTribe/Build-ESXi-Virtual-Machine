@@ -9,7 +9,7 @@ Connect-VIServer {vcenterHost.ip} `
     -Password {vcenterUser.password}
 
 # Create the TO dir string
-$to = "ds:{bootIsoDir}"
+$to = "ds:{kickstartBootIsoDir}"
 $to = $to -Replace "/","\"
 
 # Get the Datastore
@@ -37,7 +37,7 @@ if (-Not (Test-Path "$to")) {
 }
 
 # Set the local path to the ISO
-Set-Location {baseDir}
+Set-Location {kickstartBaseDir}
 
 # Copy the ISO
 Copy-DatastoreItem kickstart_{virtualMachine.fqn}.iso $to `

@@ -1,6 +1,6 @@
 {
     "key": "vcenterhost", 
     "name": "vCenter Host", 
-    "showInPlan": false, 
+    "showInPlan": true, 
     "type": "c.s.s.b.phv.Server"
 }
