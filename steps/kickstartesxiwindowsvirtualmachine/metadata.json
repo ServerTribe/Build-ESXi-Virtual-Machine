@@ -25,10 +25,6 @@
             "stepKey": "startthevirtualmachine"
         }, 
         {
-            "order": 1000, 
-            "stepKey": "cleankickstartbuildfiles"
-        }, 
-        {
             "order": 1050, 
             "stepKey": "pingforwinrmhttpsandwait120s"
         }, 

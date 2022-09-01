@@ -5,10 +5,6 @@
     "key": "prepareandcreatevirtualmachine", 
     "links": [
         {
-            "order": 50, 
-            "stepKey": "cleankickstartbuildfiles"
-        }, 
-        {
             "order": 100, 
             "stepKey": "setoptionsforthevirtualmachinekickstart"
         }, 

@@ -1,7 +1,4 @@
 
-virtualMachine="{virtualMachine.fqn}"
-storagePool="{storagePool}"
-
 pwsh <<'EOF'
 $ErrorActionPreference = "Stop"
 Import-Module VMware.VimAutomation.Core
@@ -10,8 +7,8 @@ Connect-VIServer {vcenterHost.ip} `
     -User {vcenterUser.user} `
     -Password {vcenterUser.password}
 
-$vm = Get-VM -Name "$virtualMachine"
-$iso = "[$storagePool] kickstart_isos/$virtualMachine-Drivers.iso"
+$vm = Get-VM -Name "{virtualMachine.fqn}"
+$iso = "[{storagePool}] kickstart_isos/{virtualMachine.fqn}-Drivers.iso"
 
 New-CDDrive -VM $vm -IsoPath $iso -StartConnected
 

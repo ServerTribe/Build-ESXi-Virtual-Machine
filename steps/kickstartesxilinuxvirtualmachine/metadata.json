@@ -17,10 +17,6 @@
             "stepKey": "startthevirtualmachine"
         }, 
         {
-            "order": 750, 
-            "stepKey": "cleankickstartbuildfiles"
-        }, 
-        {
             "order": 850, 
             "stepKey": "pingforssh"
         }, 
