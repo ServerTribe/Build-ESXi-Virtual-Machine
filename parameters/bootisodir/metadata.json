@@ -1,6 +1,6 @@
 {
     "key": "bootisodir", 
     "name": "Boot ISO Dir", 
-    "showInPlan": false, 
+    "showInPlan": true, 
     "type": "c.s.s.b.phv.Text"
 }

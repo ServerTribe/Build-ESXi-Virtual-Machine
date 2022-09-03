@@ -1,6 +1,6 @@
 {
     "key": "storagepool", 
     "name": "Storage Pool", 
-    "showInPlan": false, 
+    "showInPlan": true, 
     "type": "c.s.s.b.phv.Text"
 }
