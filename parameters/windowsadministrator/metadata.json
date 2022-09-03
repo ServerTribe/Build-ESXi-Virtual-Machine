@@ -1,0 +1,6 @@
+{
+    "key": "windowsadministrator", 
+    "name": "Windows Administrator", 
+    "showInPlan": false, 
+    "type": "c.s.s.b.phv.WinOsCred"
+}

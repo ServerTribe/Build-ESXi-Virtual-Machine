@@ -1,0 +1,6 @@
+{
+    "key": "virtualmachineuser", 
+    "name": "Virtual Machine User", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.OsCred"
+}

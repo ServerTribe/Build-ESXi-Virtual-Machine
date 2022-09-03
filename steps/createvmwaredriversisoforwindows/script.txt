@@ -1,4 +1,4 @@
-cd {kickstartBaseDir}/build-{virtualMachine.fqn}
+cd {baseDir}/build-{virtualMachine.fqn}
 
 mkisofs -o {virtualMachine.fqn}-Drivers.iso \
     -iso-level 2 -udf -joliet-long -relaxed-filenames -allow-limited-size \

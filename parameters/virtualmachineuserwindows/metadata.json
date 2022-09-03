@@ -1,0 +1,6 @@
+{
+    "key": "virtualmachineuserwindows", 
+    "name": "Virtual Machine User: WIndows", 
+    "showInPlan": true, 
+    "type": "c.s.s.b.phv.WinOsCred"
+}

@@ -1,6 +1,6 @@
 {
     "key": "powerclinode", 
     "name": "PowerCLI Node", 
-    "showInPlan": true, 
+    "showInPlan": false, 
     "type": "c.s.s.b.phv.LinuxServer"
 }
