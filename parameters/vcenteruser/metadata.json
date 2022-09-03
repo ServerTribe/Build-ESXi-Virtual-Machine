@@ -1,6 +1,6 @@
 {
     "key": "vcenteruser", 
     "name": "vCenter User", 
-    "showInPlan": true, 
+    "showInPlan": false, 
     "type": "c.s.s.b.phv.OsCred"
 }

@@ -1,6 +1,0 @@
-{
-    "key": "kickstartbasedir", 
-    "name": "Kickstart Base Dir", 
-    "showInPlan": true, 
-    "type": "c.s.s.b.phv.Text"
-}

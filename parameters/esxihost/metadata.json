@@ -1,6 +1,6 @@
 {
     "key": "esxihost", 
     "name": "ESXi Host", 
-    "showInPlan": true, 
+    "showInPlan": false, 
     "type": "c.s.s.b.phv.Server"
 }

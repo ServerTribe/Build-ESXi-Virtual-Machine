@@ -1,6 +1,0 @@
-{
-    "key": "kickstartbootisodir", 
-    "name": "Kickstart Boot ISO Dir", 
-    "showInPlan": true, 
-    "type": "c.s.s.b.phv.Text"
-}

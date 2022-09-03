@@ -3,7 +3,7 @@
     "interpreter": 1, 
     "key": "installvmwaretoolsonrhelcentos", 
     "name": "Install VMWare Tools on RHEL/CentOS", 
-    "osCredKey": "virtualmachinerootuserlinux", 
+    "osCredKey": "virtualmachineuserlinux", 
     "serverKey": "virtualmachinelinux", 
     "successExitCode": 0, 
     "type": "com.servertribe.attune.tuples.StepSshTuple"
