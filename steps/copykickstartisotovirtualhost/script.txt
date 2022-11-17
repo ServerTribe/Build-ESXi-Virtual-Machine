@@ -9,9 +9,8 @@ Connect-VIServer {vcenterHost.ip} `
     -Password {vcenterUser.password}
 
 # Create the TO dir string
-$to = "ds:{bootIsoDir}"
+$to = "ds:/kickstart_isos"
 $to = $to -Replace "/","\"
-
 # Get the Datastore
 $datastore = Get-Datastore -Name '{storagePool}'
 $datastore

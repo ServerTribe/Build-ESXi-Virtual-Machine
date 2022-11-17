@@ -19,10 +19,6 @@
         {
             "order": 850, 
             "stepKey": "pingforssh"
-        }, 
-        {
-            "order": 900, 
-            "stepKey": "deployandinstallvmwaretoolsonrhelcentos"
         }
     ], 
     "name": "Kickstart ESXi Linux Virtual Machine", 
